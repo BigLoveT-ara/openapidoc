@@ -1,0 +1,883 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>查询外呼任务 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../../devref/extend.html" />
+    
+    
+    <link rel="prev" href="deleteTask.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                    服务介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../devref.html">
+            
+                <a href="../../../devref.html">
+            
+                    
+                    开发指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../../devref/newref.html">
+            
+                <a href="../../../devref/newref.html">
+            
+                    
+                    入门指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../../devref/auth/auth.html">
+            
+                <a href="../../../devref/auth/auth.html">
+            
+                    
+                    账户授权
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../../devref/config/config.html">
+            
+                <a href="../../../devref/config/config.html">
+            
+                    
+                    查询配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../outbound.html">
+            
+                <a href="../../outbound.html">
+            
+                    
+                    外呼机器人
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../callout/callout.html">
+            
+                <a href="../../callout/callout.html">
+            
+                    
+                    直接外呼
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../calloutbytask.html">
+            
+                <a href="../calloutbytask.html">
+            
+                    
+                    外呼任务
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1" data-path="createTask.html">
+            
+                <a href="createTask.html">
+            
+                    
+                    创建外呼任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.2" data-path="putdata.html">
+            
+                <a href="putdata.html">
+            
+                    
+                    提交外呼数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.3" data-path="runTask.html">
+            
+                <a href="runTask.html">
+            
+                    
+                    启动外呼任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.4" data-path="pauseTask.html">
+            
+                <a href="pauseTask.html">
+            
+                    
+                    暂停外呼任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.5" data-path="deleteTask.html">
+            
+                <a href="deleteTask.html">
+            
+                    
+                    删除外呼任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2.2.6" data-path="queryTask.html">
+            
+                <a href="queryTask.html">
+            
+                    
+                    查询外呼任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../../devref/extend.html">
+            
+                <a href="../../../devref/extend.html">
+            
+                    
+                    机器人业务能力扩展
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../../devref/speechdataquery.html">
+            
+                <a href="../../../devref/speechdataquery.html">
+            
+                    
+                    话术动态数据查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../../../devref/yuyidataquery.html">
+            
+                <a href="../../../devref/yuyidataquery.html">
+            
+                    
+                    语义数据查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../../devref/datapush.html">
+            
+                <a href="../../../devref/datapush.html">
+            
+                    
+                    数据推送
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../../../devref/speechpush.html">
+            
+                <a href="../../../devref/speechpush.html">
+            
+                    
+                    话单推送
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../../../devref/voicepush.html">
+            
+                <a href="../../../devref/voicepush.html">
+            
+                    
+                    录音推送
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3" data-path="../../../devref/sessionpush.html">
+            
+                <a href="../../../devref/sessionpush.html">
+            
+                    
+                    会话推送
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <a target="_blank" href="https://github.com/kxjl-opensource/openapi_demo_java">
+            
+                    
+                    示例DEMO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../../faq.html">
+            
+                <a href="../../../faq.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../.." >查询外呼任务</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong>&#xFF1A;&#x67E5;&#x8BE2;&#x4EFB;&#x52A1;&#x4FE1;&#x606F;&#x548C;&#x4EFB;&#x52A1;&#x5217;&#x8868;&#x3002;</p>
+<p><strong>&#x63A5;&#x53E3;&#x5730;&#x5740;</strong>&#xFF1A;<a href="https://www.xfyeta.com/openapi/outbound/v1/task/query?token=08236d0aeeee4d5b566db5f4adc41a63" target="_blank">https://www.xfyeta.com/openapi/outbound/v1/task/query?token=08236d0aeeee4d5b566db5f4adc41a63</a>  </p>
+<h3 id="&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#x8BF4;&#x660E;">&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#x8BF4;&#x660E;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x540D;&#x79F0;</th>
+<th style="text-align:center">&#x5FC5;&#x586B;</th>
+<th style="text-align:center">&#x7C7B;&#x578B;</th>
+<th style="text-align:center">&#x8BF4;&#x660E;</th>
+<th style="text-align:center">&#x5907;&#x6CE8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>task_id</td>
+<td style="text-align:center">&#x5426;</td>
+<td style="text-align:center">string</td>
+<td style="text-align:center">&#x4EFB;&#x52A1;id</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>time_begin</td>
+<td style="text-align:center">&#x5426;</td>
+<td style="text-align:center">long</td>
+<td style="text-align:center">&#x5F00;&#x59CB;&#x65F6;&#x95F4;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>time_end</td>
+<td style="text-align:center">&#x5426;</td>
+<td style="text-align:center">long</td>
+<td style="text-align:center">&#x7ED3;&#x675F;&#x65F6;&#x95F4;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>task_name</td>
+<td style="text-align:center">&#x5426;</td>
+<td style="text-align:center">string</td>
+<td style="text-align:center">&#x4EFB;&#x52A1;&#x540D;&#x79F0;</td>
+<td style="text-align:center">&#x6A21;&#x7CCA;&#x68C0;&#x7D22;</td>
+</tr>
+<tr>
+<td>task_status_list</td>
+<td style="text-align:center">&#x5426;</td>
+<td style="text-align:center">int[]</td>
+<td style="text-align:center">&#x4EFB;&#x52A1;&#x72B6;&#x6001;&#x6570;&#x7EC4;</td>
+<td style="text-align:center">0&#xFF1A;&#x65B0;&#x5EFA;&#xFF0C;<br>1&#xFF1A;&#x542F;&#x52A8;&#xFF0C;<br>2&#xFF1A;&#x8FD0;&#x884C;&#xFF0C;<br>3&#xFF1A;&#x624B;&#x52A8;&#x6682;&#x505C;&#xFF0C;<br>4&#xFF1A;&#x5B8C;&#x6210;&#xFF0C;<br>5&#xFF1A;&#x7B49;&#x5F85;&#x4E0B;&#x8F6E;&#x91CD;&#x8BD5;&#xFF0C;<br>6&#xFF1A;&#x4E0D;&#x5728;&#x5DE5;&#x4F5C;&#x65F6;&#x6BB5;&#xFF0C;<br>7&#xFF1A;&#x8FC7;&#x671F;</td>
+</tr>
+<tr>
+<td>page_size</td>
+<td style="text-align:center">&#x5426;</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">&#x9875;&#x5927;&#x5C0F;</td>
+<td style="text-align:center">&#x6700;&#x5927;&#x503C;50&#xFF0C;&#x9ED8;&#x8BA4;20</td>
+</tr>
+<tr>
+<td>page_index</td>
+<td style="text-align:center">&#x5426;</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">&#x5F53;&#x524D;&#x9875;&#x7801;</td>
+<td style="text-align:center">&#x4ECE;1&#x5F00;&#x59CB;</td>
+</tr>
+<tr>
+<td>sort_name</td>
+<td style="text-align:center">&#x5426;</td>
+<td style="text-align:center">string</td>
+<td style="text-align:center">&#x6392;&#x5E8F;&#x5B57;&#x6BB5;</td>
+<td style="text-align:center">ID&#xFF1A;&#x4EFB;&#x52A1;&#x7F16;&#x53F7;&#xFF0C;<br>NAME&#xFF1A;&#x4EFB;&#x52A1;&#x540D;&#x79F0;&#xFF0C;<br>CREATETIME&#xFF1A;&#x4EFB;&#x52A1;&#x521B;&#x5EFA;&#x65F6;&#x95F4;<br>&#xFF0C;STARTTIME&#xFF1A;&#x4EFB;&#x52A1;&#x5F00;&#x59CB;&#x65F6;&#x95F4;<br>&#xFF0C;ENDTIME&#xFF1A;&#x4EFB;&#x52A1;&#x7ED3;&#x675F;&#x65F6;&#x95F4;</td>
+</tr>
+<tr>
+<td>sort_order</td>
+<td style="text-align:center">&#x5426;</td>
+<td style="text-align:center">string</td>
+<td style="text-align:center">&#x6392;&#x5E8F;&#x5B57;&#x6BB5;&#x65B9;&#x5F0F;</td>
+<td style="text-align:center">&quot;ASC&quot; &#x6B63;&#x5E8F; <br>&quot;DESC&quot; &#x5012;&#x5E8F;</td>
+</tr>
+<tr>
+<td>show_remaining</td>
+<td style="text-align:center">&#x5426;</td>
+<td style="text-align:center">boolean</td>
+<td style="text-align:center">&#x662F;&#x5426;&#x5C55;&#x793A;&#x6B63;&#x5728;&#x5904;&#x7406;&#x7684;&#x6570;&#x91CF;</td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x8BF7;&#x6C42;&#x793A;&#x4F8B;">&#x8BF7;&#x6C42;&#x793A;&#x4F8B;</h3>
+<pre><code>{
+  &quot;time_begin&quot;: 153000000,
+  &quot;show_remaining&quot;:true
+}
+</code></pre><h3 id="&#x54CD;&#x5E94;&#x793A;&#x4F8B;">&#x54CD;&#x5E94;&#x793A;&#x4F8B;</h3>
+<pre><code>{
+    &quot;code&quot;:0,
+    &quot;message&quot;:&quot;ok&quot;,
+    &quot;result&quot;:{
+        &quot;total_rows&quot;:30,
+        &quot;rows&quot;:[
+            {
+                &quot;task_id&quot;:&quot;1909&quot;,
+                &quot;task_name&quot;:&quot;task_test1&quot;,
+                &quot;status&quot;:4,
+                &quot;deleted&quot;:0,
+                &quot;time_task_start&quot;:1533289491345,
+                &quot;time_task_finish&quot;:1533820104848,
+                &quot;count_total_task&quot;:4,
+                &quot;count_tel&quot;:4,
+                &quot;count_recalled&quot;:0,
+                &quot;time_task_estimate_begin&quot;:1478157571217,
+                &quot;time_task_estimate_end&quot;:0,
+                &quot;line_num&quot;:&quot;96866001&quot;,
+                &quot;robot_id&quot;:&quot;719&quot;,
+                &quot;robot_name&quot;:&quot;&#x6D4B;&#x8BD5;&#x8BDD;&#x672F;&#x65E0;&#x53C2;&#x6570;&quot;,
+                &quot;voice_code&quot;:&quot;60030&quot;,
+                &quot;voice_speed&quot;:1,
+                &quot;count_max_recall&quot;:2,
+                &quot;status_recall&quot;:&quot;[1,1]&quot;,
+                &quot;time_recall_wait&quot;:2000,
+                &quot;time_range&quot;:&quot;[&quot;07:30:00-23:30:00&quot;]&quot;,
+                &quot;intention_push&quot;:&quot;[&quot;A&quot;,&quot;B&quot;]&quot;,
+                &quot;process_count&quot;:7,
+                &quot;process_tel_count&quot;:7,
+                &quot;process_through_count&quot;:4,
+                &quot;process_through_rate&quot;:1
+                &quot;remaining&quot;:12
+            }
+        ]
+    }
+}
+</code></pre><h3 id="result&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x96C6;&#x8BF4;&#x660E;">result&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x96C6;&#x8BF4;&#x660E;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x540D;&#x79F0;</th>
+<th style="text-align:center">&#x7C7B;&#x578B;</th>
+<th style="text-align:center">&#x5FC5;&#x586B;</th>
+<th style="text-align:center">&#x8BF4;&#x660E;</th>
+<th style="text-align:center">&#x503C;&#x57DF;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>total_rows</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">&#x662F;</td>
+<td style="text-align:center">&#x603B;&#x884C;&#x6570;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td><strong>rows</strong></td>
+<td style="text-align:center">object[]</td>
+<td style="text-align:center">&#x662F;</td>
+<td style="text-align:center">&#x7ED3;&#x679C;&#x5217;&#x8868;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>task_id</td>
+<td style="text-align:center">string</td>
+<td style="text-align:center">&#x662F;</td>
+<td style="text-align:center">&#x4EFB;&#x52A1;id</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>task_name</td>
+<td style="text-align:center">string</td>
+<td style="text-align:center">&#x5426;</td>
+<td style="text-align:center">&#x4EFB;&#x52A1;&#x540D;&#x79F0;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>status</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">&#x662F;</td>
+<td style="text-align:center">&#x4EFB;&#x52A1;&#x72B6;&#x6001;</td>
+<td style="text-align:center">0&#xFF1A;&#x65B0;&#x5EFA;&#xFF0C;<br>1&#xFF1A;&#x542F;&#x52A8;&#xFF0C;<br>2&#xFF1A;&#x8FD0;&#x884C;&#xFF0C;<br>3&#xFF1A;&#x624B;&#x52A8;&#x6682;&#x505C;&#xFF0C;<br>4&#xFF1A;&#x5B8C;&#x6210;&#xFF0C;<br>5&#xFF1A;&#x7B49;&#x5F85;&#x4E0B;&#x8F6E;&#x91CD;&#x8BD5;&#xFF0C;<br>6&#xFF1A;&#x4E0D;&#x5728;&#x5DE5;&#x4F5C;&#x65F6;&#x6BB5;&#xFF0C;<br>7&#xFF1A;&#x8FC7;&#x671F;</td>
+</tr>
+<tr>
+<td>task_type</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">&#x662F;</td>
+<td style="text-align:center">&#x4EFB;&#x52A1;&#x7C7B;&#x578B;</td>
+<td style="text-align:center">0&#xFF1A;&#x666E;&#x901A;&#x4EFB;&#x52A1;,<br>2&#xFF1A;&#x4EFB;&#x52A1;&#x6C60;</td>
+</tr>
+<tr>
+<td>deleted</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">&#x5426;</td>
+<td style="text-align:center">&#x5220;&#x9664;&#x6807;&#x5FD7;</td>
+<td style="text-align:center">1&#xFF1A;&#x5220;&#x9664;&#xFF0C;<br>0&#xFF1A;&#x6B63;&#x5E38;</td>
+</tr>
+<tr>
+<td>time_task_start</td>
+<td style="text-align:center">long</td>
+<td style="text-align:center">&#x5426;</td>
+<td style="text-align:center">&#x8FD0;&#x884C;&#x5F00;&#x59CB;&#x65F6;&#x95F4;</td>
+<td style="text-align:center">&#x6BEB;&#x79D2;&#x65F6;&#x95F4;&#x6233;</td>
+</tr>
+<tr>
+<td>time_task_finish</td>
+<td style="text-align:center">long</td>
+<td style="text-align:center">&#x5426;(&#x4EC5;&#x9650;&#x666E;&#x901A;&#x4EFB;&#x52A1;)</td>
+<td style="text-align:center">&#x8FD0;&#x884C;&#x7ED3;&#x675F;&#x65F6;&#x95F4;</td>
+<td style="text-align:center">&#x6BEB;&#x79D2;&#x65F6;&#x95F4;&#x6233;</td>
+</tr>
+<tr>
+<td>process_count</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">&#x5426;</td>
+<td style="text-align:center">&#x5DF2;&#x547C;&#x53EB;&#x6B21;&#x6570;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>process_tel_count</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">&#x5426;</td>
+<td style="text-align:center">&#x5DF2;&#x547C;&#x53EB;&#x53F7;&#x7801;&#x6570;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>process_through_count</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">&#x5426;</td>
+<td style="text-align:center">&#x5DF2;&#x63A5;&#x901A;&#x91CF;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>process_through_rate</td>
+<td style="text-align:center">double</td>
+<td style="text-align:center">&#x5426;</td>
+<td style="text-align:center">&#x5F53;&#x524D;&#x63A5;&#x901A;&#x7387;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>count_tel</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">&#x5426;</td>
+<td style="text-align:center">&#x4EFB;&#x52A1;&#x53F7;&#x7801;&#x91CF;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>count_recalled</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">&#x5426;(&#x4EC5;&#x9650;&#x666E;&#x901A;&#x4EFB;&#x52A1;)</td>
+<td style="text-align:center">&#x4EFB;&#x52A1;&#x5DF2;&#x91CD;&#x8BD5;&#x6B21;&#x6570;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>time_task_estimate_begin</td>
+<td style="text-align:center">long</td>
+<td style="text-align:center">&#x5426;(&#x4EC5;&#x9650;&#x666E;&#x901A;&#x4EFB;&#x52A1;)</td>
+<td style="text-align:center">&#x9884;&#x8BBE;&#x5F00;&#x59CB;&#x65F6;&#x95F4;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>time_task_estimate_end</td>
+<td style="text-align:center">long</td>
+<td style="text-align:center">&#x5426;(&#x4EC5;&#x9650;&#x666E;&#x901A;&#x4EFB;&#x52A1;)</td>
+<td style="text-align:center">&#x9884;&#x8BBE;&#x7ED3;&#x675F;&#x65F6;&#x95F4;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>line_num</td>
+<td style="text-align:center">string</td>
+<td style="text-align:center">&#x5426;(&#x4EC5;&#x9650;&#x666E;&#x901A;&#x4EFB;&#x52A1;)</td>
+<td style="text-align:center">&#x7EBF;&#x8DEF;&#x53F7;&#x7801;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>robot_id</td>
+<td style="text-align:center">string</td>
+<td style="text-align:center">&#x5426;(&#x4EC5;&#x9650;&#x666E;&#x901A;&#x4EFB;&#x52A1;)</td>
+<td style="text-align:center">&#x8BDD;&#x672F;id</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>robot_name</td>
+<td style="text-align:center">string</td>
+<td style="text-align:center">&#x5426;(&#x4EC5;&#x9650;&#x666E;&#x901A;&#x4EFB;&#x52A1;)</td>
+<td style="text-align:center">&#x8BDD;&#x672F;&#x540D;&#x79F0;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>voice_code</td>
+<td style="text-align:center">string</td>
+<td style="text-align:center">&#x5426;(&#x4EC5;&#x9650;&#x666E;&#x901A;&#x4EFB;&#x52A1;)</td>
+<td style="text-align:center">&#x53D1;&#x97F3;&#x4EBA;&#x7F16;&#x7801;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>voice_speed</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">&#x5426;(&#x4EC5;&#x9650;&#x666E;&#x901A;&#x4EFB;&#x52A1;)</td>
+<td style="text-align:center">&#x53D1;&#x97F3;&#x4EBA;&#x8BED;&#x901F;&#xFF0C;&#x9ED8;&#x8BA4;1</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>count_max_recall</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">&#x5426;(&#x4EC5;&#x9650;&#x666E;&#x901A;&#x4EFB;&#x52A1;)</td>
+<td style="text-align:center">&#x9884;&#x8BBE;&#x4EFB;&#x52A1;&#x91CD;&#x8BD5;&#x6B21;&#x6570;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>time_recall_wait</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">&#x5426;(&#x4EC5;&#x9650;&#x666E;&#x901A;&#x4EFB;&#x52A1;)</td>
+<td style="text-align:center">&#x9884;&#x8BBE;&#x91CD;&#x8BD5;&#x5916;&#x547C;&#x7B49;&#x5F85;&#x65F6;&#x95F4;</td>
+<td style="text-align:center">&#x5355;&#x4F4D;&#xFF1A;&#x79D2;&#x3002;</td>
+</tr>
+<tr>
+<td>time_range</td>
+<td style="text-align:center">string</td>
+<td style="text-align:center">&#x5426;(&#x4EC5;&#x9650;&#x666E;&#x901A;&#x4EFB;&#x52A1;)</td>
+<td style="text-align:center">&#x9884;&#x8BBE;&#x5916;&#x547C;&#x65F6;&#x95F4;&#x6BB5;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>intention_push</td>
+<td style="text-align:center">string</td>
+<td style="text-align:center">&#x5426;(&#x4EC5;&#x9650;&#x666E;&#x901A;&#x4EFB;&#x52A1;)</td>
+<td style="text-align:center">&#x9884;&#x8BBE;&#x63A8;&#x9001;&#x610F;&#x5411;&#x5EA6;&#x95E8;&#x9650;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>remaining</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">&#x5426;</td>
+<td style="text-align:center">&#x6B63;&#x5728;&#x5904;&#x7406;&#x7684;&#x6570;&#x91CF;</td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="deleteTask.html" class="navigation navigation-prev " aria-label="Previous page: 删除外呼任务">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../../devref/extend.html" class="navigation navigation-next " aria-label="Next page: 机器人业务能力扩展">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"查询外呼任务","level":"1.2.2.2.6","depth":4,"next":{"title":"机器人业务能力扩展","level":"1.2.3","depth":2,"path":"ref/devref/extend.md","ref":"ref/devref/extend.md","articles":[{"title":"话术动态数据查询","level":"1.2.3.1","depth":3,"path":"ref/devref/speechdataquery.md","ref":"ref/devref/speechdataquery.md","articles":[]},{"title":"语义数据查询","level":"1.2.3.2","depth":3,"path":"ref/devref/yuyidataquery.md","ref":"ref/devref/yuyidataquery.md","articles":[]}]},"previous":{"title":"删除外呼任务","level":"1.2.2.2.5","depth":4,"path":"ref/calloutrobot/calloutbytask/fc/deleteTask.md","ref":"ref/calloutrobot/calloutbytask/fc/deleteTask.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ref/calloutrobot/calloutbytask/fc/queryTask.md","mtime":"2021-04-22T03:28:14.606Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-26T01:57:07.197Z"},"basePath":"../../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
